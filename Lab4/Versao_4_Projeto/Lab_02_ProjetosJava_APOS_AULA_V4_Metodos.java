@@ -192,8 +192,8 @@ public class Lab_02_ProjetosJava_ANTES_AULA_V4_Metodos {
 		System.out.println("Lab.: PROJETOS JAVA");
 		System.out.println("Classe: "+ this.getClass().getName());
 		System.out.println("---------------------------------");
-		System.out.println("Nome: CARLOS MAGNUS CARLSON FILHO");
-		System.out.println("R.A.: 121 092 AAS P NNN");
+		System.out.println("Nome: LUIS FERNANDO HENRIQUE BARBOSA");
+		System.out.println("R.A.: 121 092 231 1 034");
 		System.out.println("---------------------------------");
 		System.out.println();
 
