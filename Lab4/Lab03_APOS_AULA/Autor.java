@@ -3,7 +3,7 @@ public class Autor {
 
 	// Uso geral - exibição de dados do autor do trabalho
 	// --------------------------------------------------
-	void exibeDadosAutor() {
+	public void exibeDadosAutor() {
 	
 		// identificação do autor do trabalho
 		System.out.println();

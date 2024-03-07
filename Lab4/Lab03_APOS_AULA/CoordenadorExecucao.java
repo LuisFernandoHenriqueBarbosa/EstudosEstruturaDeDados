@@ -17,9 +17,10 @@ public class CoordenadorExecucao {
         // criação de uma instância (objeto) da classe 'TesteArrays' para permitir o acesso
         // aos respectivos métodos
         // AQUI...
+        TestesArrays tstArrays = new TestesArrays();
         
         // criação de um objeto 'Scanner' para a interação com o teclado
-        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in,"CP850");
         
         // declaração de constantes para uso no menu
         final int ATIVIDADE_STRINGS = 1;

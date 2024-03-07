@@ -4,10 +4,10 @@ public class TestesStrings {
     // Ação 1
     // Criar uma String para cada palavra do próprio nome
     // Aqui, confunde-se com a própria definição dos atributos (constantes, no caso)
-    final String nome1 = "Carlos";
-    final String nome2 = "Magnus";
-    final String nome3 = "Carlson";
-    final String nome4 = "Filho";
+    final String nome1 = "Luis";
+    final String nome2 = "Fernando";
+    final String nome3 = "Henrique";
+    final String nome4 = "Barbosa";
 
     // Ação 2
     // Criar uma nova String que, por concatenação, resulta no nome completo
