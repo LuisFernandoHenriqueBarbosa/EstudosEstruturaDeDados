@@ -9,7 +9,7 @@ public class MetodosAvulsos {
 	public int geraNumeroRandomico( int min, int max ) {
 
 		// geração do número
-		int numeroRandomico = (int)(Math.random() * (max+1));  // [min,max]
+		int numeroRandomico = (int)(Math.random() * (max-min+1));  // [min,max]
 
 		// finalização
 		return numeroRandomico;

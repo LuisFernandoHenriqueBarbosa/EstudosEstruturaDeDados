@@ -29,17 +29,25 @@ public class TestesArrays {
 
         // declaração do array de int
         // AQUI ...
+        int[] numeros = new int[10]; 
         
         // criação de uma instância (objeto) da classe 'MetodosAvulsos' para permitir o acesso
         // aos respectivos métodos
         // AQUI ...
+        MetodosAvulsos avulso = new MetodosAvulsos();
         
-        // preenchimento dos valores dos elementos do array com números randômicos
+        // preenchimento dos valores dos elementos do array com números randômicos (for convencional)
         // AQUI ...
+        for (int i = 0; i < numeros.length; i++){
+            numeros[i] = avulso.geraNumeroRandomico(10, 50);
+        }
         
-        // percurso do array para exibição dos números
+        // percurso do array para exibição dos números (for abreviado)
         System.out.print("\nOs números gerados foram:");
         // AQUI ...
+        for (int num : numeros){
+            System.out.print( " " + num);
+        }
         System.out.println();
 
     }
