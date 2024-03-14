@@ -8,11 +8,14 @@ public class TestesArrays {
     private void exibeNomeCompleto() {
 
         // declaração do array de Strings
-        String[] nomes = { "Carlos", "Magnus", "Carlson", "Filho" };
+        String[] nomes = { "Luis", "Fernando", "Henrique", "Barbosa" };
 
-        // percurso do array para exibição do nome
+        // percurso do array para exibição do nome (for convencional)
         System.out.print("\nMeu nome completo é");
         // AQUI ...
+        for (int i = 0; i < nomes.length; i++){
+            System.out.print(" " + nomes[i] );
+        }
         System.out.println(".");
 
     }
@@ -84,16 +87,16 @@ public class TestesArrays {
     // Acionador do métodos acima (este método é chamado pelo 'CoordenadorExeucao')
     public void realizaTestes() {
 
-        // monta array de String e exibe o nome completo
+        // Ação 1 - monta array de String e exibe o nome completo
         exibeNomeCompleto();
 
-        // exibe array de números inteiros gerados randomicamente
+        // Ação 2 - exibe array de números inteiros gerados randomicamente
         exibeArrayInt();
 
-        // exibe array bidimensional
+        // Ação 3 - exibe array bidimensional
         exibeArrayBidimensional();
         
-        // exibe array bidimensional de 'String'
+        // Ação 4 - exibe array bidimensional de 'String'
         exibeArrayBidimensionalStrings();
     }
     
