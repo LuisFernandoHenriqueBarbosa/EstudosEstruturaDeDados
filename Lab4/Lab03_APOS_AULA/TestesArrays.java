@@ -62,9 +62,16 @@ public class TestesArrays {
         // declaração do array bidimensional 3x4 de int
         int matriz[][] = { {1,2,3,4}, {5,6,7,8}, {9,10,11,12} };
 
-        // percurso do array bidimensional para exibição dos números
+        // percurso do array bidimensional para exibição dos números (for convencional)
         System.out.println("\nOs números armazenados na matriz são:");
         // AQUI ...
+        for (int i = 0 ; i < matriz.length; i++){ // percorre as linhas da matriz
+            System.out.print("Linha " + i + ":");
+            for ( int j = 0; j < matriz[i].length; j++){ // percorre as colunas da linha i
+                System.out.print( " " + matriz[i][j]);
+            }
+            System.out.println("");
+        }
         System.out.println();
 
     }
