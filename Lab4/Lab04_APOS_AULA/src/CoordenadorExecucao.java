@@ -1,31 +1,34 @@
-
-// classe que coordena a execução dosmétodos
+// -------------------------------------
+// Prof.: CARLOS - FATEC S. J. Rio Preto
+// Disc.: IED-001 - ESTRUTURAS DE DADOS
+// Lab. : ARRAYS de OBJETOS em JAVA
+// Ano/S: 2024/1S
+// -------------------------------------
 
 // importação de class para leitura de dados do teclado
 import java.util.Scanner;
 
-// PROGRAMA PRINCIPAL
-// ------------------
+// classe que coordena a execução dos métodos
+// ------------------------------------------
 public class CoordenadorExecucao {
 	
     public void executaTudo() {
 
-        // criação de uma instância (objeto) da classe 'TesteStrings' para permitir o acesso
+        // criação de uma instância (objeto) da classe 'TestesArrayAlunos' para permitir o acesso
         // aos respectivos métodos
-        TestesStrings tstStrings = new TestesStrings();
+        TestesArrayAlunos tstAlunos = new TestesArrayAlunos();
         
-        // criação de uma instância (objeto) da classe 'TesteArrays' para permitir o acesso
+        // criação de uma instância (objeto) da classe 'TestesArrayPessoas' para permitir o acesso
         // aos respectivos métodos
         // AQUI...
-        TestesArrays tstArrays = new TestesArrays();
         
         // criação de um objeto 'Scanner' para a interação com o teclado
         Scanner teclado = new Scanner(System.in,"CP850");
         
         // declaração de constantes para uso no menu
-        final int ATIVIDADE_STRINGS = 1;
-        final int ATIVIDADE_ARRAYS  = 2;
-        final int SAIR              = 9;
+        final int ATIVIDADE_ARRAY_ALUNOS  = 1;
+        final int ATIVIDADE_ARRAY_PESSOAS = 2;
+        final int SAIR                    = 9;
 
         // declaração de variáveis a serem usadas (independentemente da Atividade)
         int escolha;
@@ -35,8 +38,8 @@ public class CoordenadorExecucao {
             // apresentação das opções de escolha
             System.out.println("\n\n");
             System.out.println("Escoha uma das opções abaixo:");
-            System.out.println("1 - Atividade 1 - Teste de Strings");
-            System.out.println("2 - Atividade 2 - Teste de Arrays");
+            System.out.println("1 - Atividade 1 - Testes com Array de Alunos");
+            System.out.println("2 - Atividade 2 - Testes com Array de Pessoas");
             System.out.println("9 - Sair");
             
             System.out.print("\nDigite aqui a sua opção: ");
@@ -47,22 +50,16 @@ public class CoordenadorExecucao {
 		    // avaliação da opção e acionamento da respectiva Atividade
 		    switch ( escolha ) {
 			
-			    case ATIVIDADE_STRINGS:
-                        System.out.println("Atividade 1: Teste de Strings !\n");
-					    // declarar variável para armazenar o nome da sua turma (exemplo: 3_INFO_M")
-					    String nomeTurma;
-					    // obtenção do valor via teclado
-				        System.out.println("Informe o nome da sua turma: ");
-					    nomeTurma = teclado.nextLine();
-					    // acionamento do método para teste de Strings
-					    tstStrings.realizaTestes( nomeTurma );
+			    case ATIVIDADE_ARRAY_ALUNOS:
+                        System.out.println("Atividade 1: Testes com Array de Alunos !\n");
+					    // acionamento do método para testes com array de Alunos
+					    tstAlunos.realizaTestes();
 			            break;
 			    
- 			    case ATIVIDADE_ARRAYS:
-                        System.out.println("Atividade 2: Teste de Arrays !\n");
- 					    // acionamento do método para teste de Arrays
+ 			    case ATIVIDADE_ARRAY_PESSOAS:
+                        System.out.println("Atividade 2: Testes com Array de Pessoas !\n");
+ 					    // acionamento do método para testes com array de Pessoas
                         // AQUI...
-                        tstArrays.realizaTestes();
 
                         break;
 				
