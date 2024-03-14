@@ -21,7 +21,7 @@ public class TestesArrayAlunos {
         // Ação 1
         // Criar um array unidimensional de Aluno, em que cada elemento é um objeto da classe Aluno.
         // O array deve permitir o armazenamento de dados de 4 alunos.
-
+        
         // Ação 2
         // Preencher o conteúdo do array a partir de dados obtidos via teclado, um aluno por vez.
         // Utilizar o método construtor para transferir os dados a cada objeto da classe Aluno.
