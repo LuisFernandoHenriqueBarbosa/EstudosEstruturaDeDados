@@ -6,57 +6,50 @@
 // -------------------------------------
 
 // classe que modela a entidade 'Aluno'
-public class Aluno {
+public class Pessoa {
 
 	// Atributos
 	// ---------
 	String nome;
-	String RA;
-	String curso;
+	String cpf;
 
 	// Método Construtor
 	// -----------------
-	public Aluno( String nomeRecebido, String raRecebido, String cursoRecebido ) {
+	public Pessoa(String nomeRecebido, String cpfRecebido){
 		nome  = nomeRecebido;
-		RA    = raRecebido;
-		curso = cursoRecebido;
+		cpf    = cpfRecebido;
 	}
 
 	// Métodos 'getters' e 'setters' (sempre 'private')
 	// ------------------------------------------------
+	
 	public String getNome() {
 		return nome;
 	}
-	public void setNome( String nomeRecebido ) {
-		nome = nomeRecebido;
+
+	public void setNome(String nomeRecebido) {
+		this.nome = nomeRecebido;
 	}
 
-	public String getRA() {
-		return RA;
-	}
-	public void setRA(String raRecebido) {
-		RA = raRecebido;
+	public String getCpf() {
+		return cpf;
 	}
 
-	public String getCurso() {
-		return curso;
-	}
-	public void setCurso(String cursoRecebido) {
-		this.curso = cursoRecebido;
+	public void setCpf(String cpfRecebido) {
+		this.cpf = cpfRecebido;
 	}
 
 	// Outros métodos ('public' ou 'private', conforme a necessidade
 	// -------------------------------------------------------------
 
 	// método para exibição dos dados do Aluno
-	public void exibeDadosAluno() {
+	void exibeDadosPessoa() {
 	
 		// identificação do autor do trabalho
 		System.out.println();
 		System.out.println("---------------------------------");
-		System.out.println("Aluno: " + nome);  // nome  do aluno
-		System.out.println("R.A. : " + RA);    // R.A.  do aluno
-		System.out.println("Curso: " + curso); // curso do aluno
+		System.out.println("Pessoa: " + nome); // nome  do aluno
+		System.out.println("CPF : " + cpf); // R.A.  do aluno
 		System.out.println("---------------------------------");
 		System.out.println();
 	
