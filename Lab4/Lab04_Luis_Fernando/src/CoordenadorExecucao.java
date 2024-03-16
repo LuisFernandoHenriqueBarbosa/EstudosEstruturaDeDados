@@ -21,6 +21,7 @@ public class CoordenadorExecucao {
         // criação de uma instância (objeto) da classe 'TestesArrayPessoas' para permitir o acesso
         // aos respectivos métodos
         // AQUI...
+        TestesArrayPessoas tstPessoas = new TestesArrayPessoas();
         
         // criação de um objeto 'Scanner' para a interação com o teclado
         Scanner teclado = new Scanner(System.in,"CP850");
@@ -53,14 +54,14 @@ public class CoordenadorExecucao {
 			    case ATIVIDADE_ARRAY_ALUNOS:
                         System.out.println("Atividade 1: Testes com Array de Alunos !\n");
 					    // acionamento do método para testes com array de Alunos
-					    tstAlunos.realizaTestes();
+                        tstAlunos.realizaTestes();
 			            break;
 			    
  			    case ATIVIDADE_ARRAY_PESSOAS:
                         System.out.println("Atividade 2: Testes com Array de Pessoas !\n");
  					    // acionamento do método para testes com array de Pessoas
                         // AQUI...
-
+                        tstPessoas.realizaTestes();
                         break;
 				
 			    case SAIR:
@@ -83,4 +84,3 @@ public class CoordenadorExecucao {
 	
     }
 }
-
