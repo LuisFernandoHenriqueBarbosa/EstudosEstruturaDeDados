@@ -48,8 +48,8 @@ public class Pessoa {
 		// identificação do autor do trabalho
 		System.out.println();
 		System.out.println("---------------------------------");
-		System.out.println("Pessoa: " + nome); // nome  do aluno
-		System.out.println("CPF : " + cpf); // R.A.  do aluno
+		System.out.println("Pessoa: " + nome); // nome  da pessoa
+		System.out.println("CPF : " + cpf); // CPF  da pessoa
 		System.out.println("---------------------------------");
 		System.out.println();
 	

@@ -54,6 +54,7 @@ public class CoordenadorExecucao {
 			    case ATIVIDADE_ARRAY_ALUNOS:
                         System.out.println("Atividade 1: Testes com Array de Alunos !\n");
 					    // acionamento do método para testes com array de Alunos
+                        tstAlunos.realizaTestes();
 			            break;
 			    
  			    case ATIVIDADE_ARRAY_PESSOAS:
