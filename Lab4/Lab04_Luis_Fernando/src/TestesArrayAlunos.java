@@ -55,9 +55,9 @@ public class TestesArrayAlunos {
         // um dos alunos cujos dados estão armazenados no array.
         // EXEMPLO: dados do aluno da posição 2 do array
         // OPCIONALMENTE, pode obter os novos dados via teclado
-        alunos[2].setNome ( "Nome de Teste");
-        alunos[2].setRA   ( "1234567890");
-        alunos[2].setCurso("Curso de Teste");
+        // alunos[2].setNome ( "Nome de Teste");
+        // alunos[2].setRA   ( "1234567890");
+        // alunos[2].setCurso("Curso de Teste");
 
         // Ação 5
         // Exibir o conteúdo do array utilizando o comando for (na versão simplificada, que não exige
@@ -65,7 +65,6 @@ public class TestesArrayAlunos {
         for ( Aluno a : alunos ) {
             a.exibeDadosAluno();
         }
-
     }
 
 }
