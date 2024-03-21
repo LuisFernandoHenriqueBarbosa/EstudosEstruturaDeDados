@@ -18,8 +18,8 @@ public class Autor {
 		System.out.println("ESTRUTURAS DE DADOS - 2024/1S");
 		System.out.println("Lab.: ARRAYS - BUSCA E CLASSIFICAÇÃO");
 		System.out.println("------------------------------------");
-		System.out.println("Nome: CARLOS MAGNUS CARLSON FILHO");
-		System.out.println("R.A.: 121 092 AAS P NNN");
+		System.out.println("Nome: LUIS FERNANDO HENRIQUE BARBOSA");
+		System.out.println("R.A.: 121 092 231 1 034");
 		System.out.println("------------------------------------");
 		System.out.println();
 	
