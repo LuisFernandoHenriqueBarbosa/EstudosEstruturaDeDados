@@ -19,11 +19,12 @@ public class TesteBuscaLinear {
         G100,
         G1000,
         G10000,
-        G100000 //, G1000000
+        G100000,
+        G1000000
     }
 
     // array com os rspectivos tamanhos
-    private int[] tamanhos = { 10, 100, 1000, 10000, 100000/* , 1000000*/ };
+    private int[] tamanhos = { 10, 100, 1000, 10000, 100000, 1000000 };
 
     // atributo: array que armazena os tempos de execução dos testes
     private float[] tempos;
