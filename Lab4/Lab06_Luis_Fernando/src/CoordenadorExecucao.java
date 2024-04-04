@@ -110,7 +110,7 @@ public class CoordenadorExecucao {
                         System.out.println("ENCONTRADO na posição " + rBI);
                     }
                     // 2. conteúdo inexistente
-                    System.out.print("Buscando o conteúdo 9.9 no 'array' de 'int' ... ");
+                    System.out.print("Buscando o conteúdo 9.9 no 'array' de 'double' ... ");
                     rBI = independente.buscaArrayDouble(doubleArray,9.9);
                     if ( rBI == -1 ) {
                         System.out.println("NÃO ENCONTRADO !");
@@ -121,7 +121,23 @@ public class CoordenadorExecucao {
 
                     // exemplo de busca por um conteúdo no 'array' de 'String'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 'Henrique' no 'array' de 'String' ... ");
+                    rBI = independente.buscaArrayString(stringArray,"Henrique");
+                    if ( rBI == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + rBI);
+                    } 
                     // 2. conteúdo inexistente
+                    System.out.print("Buscando o conteúdo 'Neto' no 'array' de 'String' ... ");
+                    rBI = independente.buscaArrayString(stringArray,"Neto");
+                    if ( rBI == -1 ) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    }
+                    else {
+                        System.out.println("ENCONTRADO na posição " + rBI);
+                    }
                     // AQUI ...
 
                     break;

@@ -73,5 +73,19 @@ public class MetodosIndependentes {
     // método buscaArrayString para buscar um conteúdo ('key') num array de 'String'
     // retorna a posição em que o conteúdo foi encontrado no array ou -1 se não encontrou
     // AQUI ...
+    public int buscaArrayString(String[] inputArray, String key) {
+
+        // busca sobre o vetor
+        for( int i = 0; i < inputArray.length; i++ ) {
+            // se encontrou, já pode acabar - retorna a posição i
+            if ( inputArray[i].equals(key)) {
+                return i;
+            }
+        }
+
+        // se terminou a busca sem encontrar, retorna -1
+        return -1;
+
+    }  // fim do método buscaArrayString
 
 }
