@@ -243,10 +243,24 @@ public class CoordenadorExecucao {
 
                     // declaração de variável auxiliar para indicar o resultado da busca
                     // AQUI ...
-
+                    int rBL;
                     // exemplo de busca por um conteúdo no 'array' de objetos 'Integer'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 5 no 'array' de 'Integer' ... ");
+                    rBI = generico.buscaArray(intArrayE, 5);
+                    if (rBI == -1) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    } else {
+                        System.out.println("ENCONTRADO na posição " + rBI);
+                    }
                     // 2. conteúdo inexistente
+                    System.out.print("Buscando o conteúdo 9 no 'array' de 'Integer' ... ");
+                    rBI = sobrecarregado.buscaArray(intArray, 9);
+                    if (rBI == -1) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    } else {
+                        System.out.println("ENCONTRADO na posição " + rBI);
+                    }
                     // AQUI ...
 
                     // exemplo de busca por um conteúdo no 'array' de objetos 'Double'
