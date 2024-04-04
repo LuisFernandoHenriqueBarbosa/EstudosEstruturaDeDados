@@ -243,34 +243,62 @@ public class CoordenadorExecucao {
 
                     // declaração de variável auxiliar para indicar o resultado da busca
                     // AQUI ...
-                    int rBL;
+                    int rBl;
                     // exemplo de busca por um conteúdo no 'array' de objetos 'Integer'
                     // 1. conteúdo existente
                     System.out.print("Buscando o conteúdo 5 no 'array' de 'Integer' ... ");
-                    rBI = generico.buscaArray(intArrayE, 5);
-                    if (rBI == -1) {
+                    rBl = generico.buscaArray(intArrayE, 5);
+                    if (rBl == -1) {
                         System.out.println("NÃO ENCONTRADO !");
                     } else {
-                        System.out.println("ENCONTRADO na posição " + rBI);
+                        System.out.println("ENCONTRADO na posição " + rBl);
                     }
                     // 2. conteúdo inexistente
                     System.out.print("Buscando o conteúdo 9 no 'array' de 'Integer' ... ");
-                    rBI = sobrecarregado.buscaArray(intArray, 9);
-                    if (rBI == -1) {
+                    rBl = generico.buscaArray(intArrayE, 9);
+                    if (rBl == -1) {
                         System.out.println("NÃO ENCONTRADO !");
                     } else {
-                        System.out.println("ENCONTRADO na posição " + rBI);
+                        System.out.println("ENCONTRADO na posição " + rBl);
                     }
                     // AQUI ...
 
                     // exemplo de busca por um conteúdo no 'array' de objetos 'Double'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 5.5 no 'array' de 'Double' ... ");
+                    rBl = generico.buscaArray(doubleArrayE, 5.5);
+                    if (rBl == -1) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    } else {
+                        System.out.println("ENCONTRADO na posição " + rBl);
+                    }
                     // 2. conteúdo inexistente
+                    System.out.print("Buscando o conteúdo 9.9 no 'array' de 'Double' ... ");
+                    rBl = generico.buscaArray(doubleArrayE, 9.9);
+                    if (rBl == -1) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    } else {
+                        System.out.println("ENCONTRADO na posição " + rBl);
+                    }
                     // AQUI ...
 
                     // exemplo de busca por um conteúdo no 'array' de objetos 'String'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 'Henrique' no 'array' de 'String' ... ");
+                    rBl = generico.buscaArray(stringArrayE, "Henrique");
+                    if (rBl == -1) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    } else {
+                        System.out.println("ENCONTRADO na posição " + rBl);
+                    }
                     // 2. conteúdo inexistente
+                    System.out.print("Buscando o conteúdo 'Neto' no 'array' de 'String' ... ");
+                    rBl = generico.buscaArray(stringArrayE, "Neto");
+                    if (rBl == -1) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    } else {
+                        System.out.println("ENCONTRADO na posição " + rBl);
+                    }
                     // AQUI ...
 
                     break;
