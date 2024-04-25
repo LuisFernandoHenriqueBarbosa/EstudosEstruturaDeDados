@@ -23,14 +23,14 @@ public class EmpregadoComissionado_Avulso0 //extends Object
            String argSobrenome,
            String argCpf,
            double argVendasBrutas,
-           double argTaxaComisscao )                                     
+           double argTaxaComissao )                                     
    {                                                                  
       // chamada implícita para o construtor Object ocorre aqui              
       nome = argNome;                                              
       sobrenome = argSobrenome;                                                
       cpf = argCpf;                                     
       setVendasBrutas( argVendasBrutas ); // valida e armazena as vendas brutas       
-      setTaxaComissao( argTaxaComisscao ); // valida e armazena a taxa de comissão
+      setTaxaComissao( argTaxaComissao ); // valida e armazena a taxa de comissão
    } // fim do construtor              
 
    // configura o nome 
@@ -82,9 +82,9 @@ public class EmpregadoComissionado_Avulso0 //extends Object
    } // fim do método getVendasBrutas 
 
    // configura a taxa de comissão
-   public void setTaxaComissao( double argTaxaComisscao )
+   public void setTaxaComissao( double argTaxaComissao )
    {
-      taxaComissao = ( argTaxaComisscao > 0.0 && argTaxaComisscao < 1.0 ) ? argTaxaComisscao : 0.0;
+      taxaComissao = ( argTaxaComissao > 0.0 && argTaxaComissao < 1.0 ) ? argTaxaComissao : 0.0;
    } // fim do método setTaxaComissao 
 
    // retorna a taxa de comissão 

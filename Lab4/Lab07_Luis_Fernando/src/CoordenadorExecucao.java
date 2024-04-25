@@ -234,8 +234,8 @@ public class CoordenadorExecucao {
         autor.exibeDadosAutor(
                 "ESTRUTURAS DE DADOS - 2024/1S",
                 "COMPOSIÇÃO e HERANÇA em JAVA",
-                "CARLOS MAGNUS CARLSON FILHO",
-                "121 092 AAS P NNN");
+                "LUIS FERNANDO HENRIQUE BARBOSA",
+                "121 092 231 1 034");
 
     }
 

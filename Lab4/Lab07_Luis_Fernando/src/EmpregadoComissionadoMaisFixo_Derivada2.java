@@ -44,7 +44,7 @@ public class EmpregadoComissionadoMaisFixo_Derivada2 extends EmpregadoComissiona
    {
       return salarioFixo + ( taxaComissao * vendasBrutas );
    } // fim do método vencimentos              
-
+   @Override
    // retorna a representação String do objeto
    public String toString()
    {
