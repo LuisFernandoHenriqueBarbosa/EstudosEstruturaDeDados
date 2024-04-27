@@ -62,7 +62,8 @@ public class CoordenadorExecucao {
                                     "Lewis",
                                     "000.000.000-00",
                                     5000,
-                                    .04);
+                                    .04,
+                                    300);
 
                     // obtém os dados do empregado comissionado com salário-base 
                     System.out.println(
@@ -78,6 +79,8 @@ public class CoordenadorExecucao {
                             empregado0.getVendasBrutas());
                     System.out.printf("%s %.2f\n", "A taxa de comissão é",
                             empregado0.getTaxaComissao());
+                    System.out.printf("%s %.2f\n", "Os vencimentos fixos são",
+                            empregado0.getSalarioFixo());
 
                     // altera alguns dados para testar métodos da classe
                     empregado0.setVendasBrutas(500); // configura as vendas brutas                                  

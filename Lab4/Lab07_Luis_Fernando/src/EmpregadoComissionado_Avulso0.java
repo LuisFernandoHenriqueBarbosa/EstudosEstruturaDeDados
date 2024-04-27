@@ -16,6 +16,7 @@ public class EmpregadoComissionado_Avulso0 //extends Object
    private String cpf;                   
    private double vendasBrutas; // vendas brutas semanais       
    private double taxaComissao; // porcentagem da comissão
+   private double salarioFixo; // salário-base por semana
 
    // construtor de cinco argumentos                                       
    public EmpregadoComissionado_Avulso0(
@@ -23,7 +24,8 @@ public class EmpregadoComissionado_Avulso0 //extends Object
            String argSobrenome,
            String argCpf,
            double argVendasBrutas,
-           double argTaxaComissao )                                     
+           double argTaxaComissao,
+           double argSalarioFixo )                                     
    {                                                                  
       // chamada implícita para o construtor Object ocorre aqui              
       nome = argNome;                                              
@@ -31,6 +33,7 @@ public class EmpregadoComissionado_Avulso0 //extends Object
       cpf = argCpf;                                     
       setVendasBrutas( argVendasBrutas ); // valida e armazena as vendas brutas       
       setTaxaComissao( argTaxaComissao ); // valida e armazena a taxa de comissão
+      setSalarioFixo( argSalarioFixo ); // valida e armazena salário-base
    } // fim do construtor              
 
    // configura o nome 
@@ -93,20 +96,34 @@ public class EmpregadoComissionado_Avulso0 //extends Object
       return taxaComissao;
    } // fim do método getTaxaComissao 
 
-   // calcula os vencimentos do empregado
-   public double vencimentos()              
-   {                                     
-      return taxaComissao * vendasBrutas;
+   // configura o salário-base                                    
+   public void setSalarioFixo( double argSalarioFixo )            
+   {                                                     
+      salarioFixo = ( argSalarioFixo < 0.0 ) ? 0.0 : argSalarioFixo;      
+   } // fim do método setSalarioFixo                         
+
+   // retorna o salário-base                                   
+   public double getSalarioFixo()                            
+   {                                                        
+      return salarioFixo;                                    
+   } // fim do método getSalarioFixo                            
+
+   // calcula os vencimentos do empregado                 
+   public double vencimentos()
+   {
+      return salarioFixo + ( taxaComissao * vendasBrutas );
    } // fim do método vencimentos              
 
    // retorna a representação String do objeto
-   public String toString()                                         
-   {                                                                
-      return String.format( "%s: %s %s\n%s: %s\n%s: %.2f\n%s: %.2f",
-         "Empregado comissionado", nome, sobrenome,                
-         "CPF", cpf,            
-         "Vendas brutas", vendasBrutas,                                 
-         "Taxa de comissão", taxaComissao );                       
+   public String toString()
+   {
+      return String.format(                                           
+         "%s: %s %s\n%s: %s\n%s: %.2f\n%s: %.2f\n%s: %.2f",           
+         "Empregado comissionado + fixo", nome, sobrenome,    
+         "CPF", cpf,              
+         "Vendas brutas", vendasBrutas,
+         "Taxa de comissao", taxaComissao,
+         "Vencimento fixo", salarioFixo );                         
    } // fim do método toString
    
 } // fim da classe
