@@ -83,8 +83,7 @@ public class CoordenadorExecucao {
                             empregado0.getSalarioFixo());
 
                     // altera alguns dados para testar métodos da classe
-                    empregado0.setVendasBrutas(500); // configura as vendas brutas                                  
-                    empregado0.setTaxaComissao(.1); // configura a taxa de comissão
+                    empregado0.setSalarioFixo(1000); // configura salario base
 
                     // exibe novamente, agora por meio de 'toString'
                     System.out.printf("\n%s:\n%s\n%s\n",
