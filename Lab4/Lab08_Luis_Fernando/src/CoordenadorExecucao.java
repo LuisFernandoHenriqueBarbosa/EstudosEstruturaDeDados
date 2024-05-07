@@ -10,6 +10,7 @@
 // -----------------------------------------------------
 
 // importação do pacote que contém o código para uso do teclado
+import java.time.LocalDate;
 import java.util.Scanner;
 
 // classe coordenadora da execução dos testes
@@ -69,12 +70,12 @@ public class CoordenadorExecucao {
                                 300);
 
                 EmpregadoProducao empregadoProducao = new EmpregadoProducao(
-                                "Robert",
-                                "Junior",
-                                "444.444.444-44",
-                                25,
-                                10,
-                                2001,
+                                "Luis",
+                                "Fernando",
+                                "555.666.777-10",
+                                29,
+                                04,
+                                2004,
                                 5.00,
                                 300);
 
@@ -102,9 +103,6 @@ public class CoordenadorExecucao {
                                         "2 - Atividade 2: Processamento POLIMÓRFICO de vários tipos de objetos 'Empregado'");
                         System.out.println(
                                         "3 - Atividade 3: Exibição do nome da classe efetiva de cada objeto da classe 'Empregado'");
-                        System.out.println(
-                                        "4 - Atividade 4: Exibição do nome da classe efetiva de cada objeto da classe 'EmpregadoProdução'");
-                        System.out.println("9 - Sair");
 
                         System.out.print("\nDigite aqui a sua opção: ");
                         // coleta da opção digitada
@@ -158,6 +156,21 @@ public class CoordenadorExecucao {
                                                                         "Novo salário base com 10%% de aumento é: $%,.2f\n",
                                                                         empregado.getSalarioBase());
                                                 } // fim do if
+                                                  // CRIAR VARIÁVEL PRA PEGAR A DATA USANDO ATUAL
+                                                // USANDO a lib 'LocalDate'
+                                                LocalDate dataAtual = LocalDate.now();
+
+                                                if (empregadoAtual.getDataNascimento().getMonth() == dataAtual
+                                                                .getMonthValue()) {
+
+                                                        // var empregadoTeste = var (empregadoAtual);
+
+                                                        System.out.println(empregadoAtual.getNome()
+                                                                        + " faz aniversário neste mês! Portanto, ganha um bônus de 100 reais.");
+                                                        System.out.printf("Salário com bônus de R$100: $%,.2f",
+                                                                        empregadoAtual.vencimentos() + 100);
+                                                        System.out.println(); // QUEBRAR A LINHA NÉ
+                                                }
 
                                                 System.out.printf(
                                                                 "Vencimentos $%,.2f\n\n", empregadoAtual.vencimentos());
