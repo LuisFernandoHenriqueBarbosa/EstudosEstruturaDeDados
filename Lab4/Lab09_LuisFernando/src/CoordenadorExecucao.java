@@ -115,10 +115,10 @@ public class CoordenadorExecucao {
         // aciona método para exibição dos dados do autor do trabalho
         Autor autor = new Autor();
         autor.exibeDadosAutor(
-                "ESTRUTURAS DE DADOS - 2024/1S",
-                "ARRANJOS DINÂMICOS em JAVA",
-                "CARLOS MAGNUS CARLSON FILHO",
-                "121 092 AAS P NNN");
+            "ESTRUTURAS DE DADOS - 2024/1S",
+            "COMPOSIÇÃO e HERANÇA em JAVA",
+            "LUIS FERNANDO HENRIQUE BARBOSA",
+            "121 092 231 1 034");
 
     } // fim do método 'executaTudo'
 
