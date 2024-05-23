@@ -88,7 +88,7 @@ public class CoordenadorExecucao {
 
                     break;
 
-                /*case FILA_INTEGERS:
+                case FILA_INTEGERS:
                     System.out.println("\nAtividade 4: Criação e uso de uma FILA  contendo elementos INTEGER");
                     System.out.println("--------------------------------------------------------------------");
 
@@ -110,7 +110,7 @@ public class CoordenadorExecucao {
                     // acionamento do método de 'entrada' da classe 'TesteFilaLivros'
                     teste5.executaTeste();
 
-                    break;*/
+                    break;
 
                 case SAIR:
                     System.out.println("\nSair ...\n");
