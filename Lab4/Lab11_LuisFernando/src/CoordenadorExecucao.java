@@ -29,7 +29,7 @@ public class CoordenadorExecucao {
         final int ALUNOS_PPS_HASHMAP = 5;
         //final int ALUNOS_PPS_LINKEDHASHMAP = 6;
         //final int PALAVRAS_QTDS_HASHMAP = 7;
-        //final int CARACTERES_QTDS_LINKEDHASHMAP = 8;
+        final int CARACTERES_QTDS_LINKEDHASHMAP = 8;
         final int SAIR = 9;
 
         // declaração de variáveis a serem usadas (independentemente da Atividade)
@@ -47,7 +47,7 @@ public class CoordenadorExecucao {
             System.out.println("5 - Atividade 5: Criação e uso de HASHMAP        para armazenar pares (RA,PP) de alunos");
             //System.out.println("6 - Atividade 6: Criação e uso de LINKEDHASHMAP  para armazenar pares (RA,PP) de alunos");
             //System.out.println("7 - Atividade 7: Criação e uso de HASHMAP        para contabilizar qtds ocorrências de palavras distintas");
-            //System.out.println("8 - Atividade 8: Criação e uso de LINKEDHASHMAP  para contabilizar qtds ocorrências de caracteres distintos");
+            System.out.println("8 - Atividade 8: Criação e uso de LINKEDHASHMAP  para contabilizar qtds ocorrências de caracteres distintos");
             System.out.println("9 - Sair");
 
             System.out.print("\nDigite aqui a sua opção: ");
@@ -151,8 +151,8 @@ public class CoordenadorExecucao {
 
                     break;*/
 
-                /*
-                // opção 8
+                
+
                 case CARACTERES_QTDS_LINKEDHASHMAP:
                     System.out.println("\nAtividade 8: Criação e uso de LINKEDHASHMAP  para contabilizar qtds ocorrências de caracteres distintos");
                     System.out.println("---------------------------------------------------------------------------------------------------------");
@@ -163,7 +163,7 @@ public class CoordenadorExecucao {
                     // acionamento do método de 'entrada' da classe 'TesteLinkedHashMapCaracteresQtds'
                     teste8.executaTeste();
 
-                    break;*/
+                    break;
 
                 case SAIR:
                     System.out.println("\nSair ...\n");
